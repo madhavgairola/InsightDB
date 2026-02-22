@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InsightDB - AI Data Intelligence</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Intro Video Splash Screen -->
+    <div id="video-splash">
+        <video id="intro-video" muted playsinline>
+            <source src="your-video-filename.mp4.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <button id="skip-intro-btn">Skip Intro</button>
+    </div>
+
+    <header>
+        <div class="logo" id="logo-home" style="cursor: pointer;">InsightDB</div>
+        <div class="status-indicator">
+            System Status: <span id="system-status" class="status-pending">Initializing...</span>
+        </div>
+    </header>
+
+    <!-- Authentication View -->
+    <section id="auth-view" class="view-section auth-container">
+        <div class="auth-card">
+            <h1 class="auth-logo">InsightDB</h1>
+
+            <div class="auth-tabs">
+                <button class="auth-tab-btn active" data-auth="login">Login</button>
+                <button class="auth-tab-btn" data-auth="signup">Sign Up</button>
+            </div>
+
+            <div id="login-form" class="auth-form active">
+                <div class="field-group">
+                    <label>Email</label>
+                    <input type="email" id="login-email" placeholder="user@insightdb.com" required>
+                </div>
+                <div class="field-group">
+                    <label>Password</label>
+                    <input type="password" id="login-password" placeholder="••••••••" required>
+                </div>
+                <button id="login-btn" class="primary-btn auth-submit">Log In</button>
+            </div>
+
+            <div id="signup-form" class="auth-form">
+                <div class="field-group">
+                    <label>Full Name</label>
+                    <input type="text" id="signup-name" placeholder="John Doe" required>
+                </div>
+                <div class="field-group">
+                    <label>Email</label>
+                    <input type="email" id="signup-email" placeholder="user@insightdb.com" required>
+                </div>
+                <div class="field-group">
+                    <label>Password</label>
+                    <input type="password" id="signup-password" placeholder="••••••••" required>
+                </div>
+                <button id="signup-btn" class="primary-btn auth-submit">Sign Up</button>
+            </div>
+
+            <button id="guest-login-btn" class="secondary-btn guest-btn">Log In as Guest</button>
+
+            <div class="auth-divider">
+                <span>OR</span>
+            </div>
+
+            <button id="google-login-btn" class="google-btn">
+                <img src="https://lh3.googleusercontent.com/COxitqSgS1P-B8qc9S9DvL83T-E_9CbeA8GvXG0_D7v0y7fP9FzS19m_S7pIsbCm44fWNYByI5lW126bY9k19k6N9R0"
+                    alt="Google">
+                Continue with Google
+            </button>
+
+            <p id="auth-error" class="auth-error-msg hidden"></p>
+        </div>
+    </section>
+
+    <!-- Landing Page (Shown when no data) -->
+    <section id="landing-view" class="landing-container">
+        <div class="landing-content">
+            <h1>Welcome to InsightDB</h1>
+            <p>Upload your CSV datasets to start your AI-powered data intelligence journey.</p>
+
+            <div class="upload-zone" id="drop-zone">
+                <div class="upload-icon">📂</div>
+                <h3>Drag & Drop Files</h3>
+                <p>or click the button below to browse</p>
+                <button id="landing-upload-btn" class="primary-btn large">Upload Dataset (.csv)</button>
+                <input type="file" id="landing-file-input" multiple accept=".csv" style="display: none;">
+            </div>
+
+        </div>
+    </section>
+
+    <div class="container hidden" id="app-container">
+
+        <!-- Sidebar / Table List -->
+        <aside class="sidebar" id="sidebar-panel">
+            <div class="sidebar-header">
+                <button id="toggle-sidebar-btn" class="icon-btn" title="Collapse Sidebar">◀</button>
+            </div>
+
+            <ul class="nav-menu">
+                <li class="nav-item active" id="nav-dashboard">📊 Dashboard</li>
+                <li class="nav-item" id="nav-docs">📄 Full Documentation</li>
+            </ul>
+
+            <div class="sidebar-divider"></div>
+            <div class="sidebar-label">Tables detected</div>
+
+            <ul id="table-list">
+                <!-- Populated by JS -->
+                <li class="loading">Loading tables...</li>
+            </ul>
+
+            <div class="sidebar-footer">
+                <button id="exit-btn" class="secondary-btn full-width">🚪 Exit Session</button>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+
+            <!-- Dashboard Overview (Default View) -->
+            <!-- Overview Dashboard -->
+            <section id="dashboard-view" class="view-section active">
+                <div class="header-actions">
+                    <h2>Overview Dashboard</h2>
+                    <button id="upload-btn" class="primary-btn">Upload Dataset (.csv)</button>
+                    <input type="file" id="file-input" multiple accept=".csv" style="display: none;">
+                </div>
+                <div class="metrics-grid">
+                    <div class="card metric-card">
+                        <span class="label">Total Tables</span>
+                        <span class="value" id="total-tables">-</span>
+                    </div>
+                    <div class="card metric-card">
+                        <span class="label">Total Rows</span>
+                        <span class="value" id="total-rows">-</span>
+                    </div>
+                    <div class="card metric-card">
+                        <span class="label">Avg Trust Score</span>
+                        <span class="value" id="avg-trust">-</span>
+                    </div>
+                </div>
+
+                <!-- Project Documentation Section -->
+                <div class="documentation-section">
+                    <div class="card doc-card">
+                        <h3 id="doc-title">Project Overview</h3>
+                        <p id="doc-description" class="doc-main-desc">Initializing AI Documentation...</p>
+
+                        <div class="doc-grid" id="doc-dynamic-grid">
+                            <div class="doc-item">
+                                <h4>🎯 Dataset Context</h4>
+                                <p id="dataset-context">Analyzing dataset structure...</p>
+                            </div>
+                            <div class="doc-item">
+                                <h4>💎 Business Value</h4>
+                                <ul id="business-value-list">
+                                    <li>Analyzing potential value...</li>
+                                </ul>
+                            </div>
+                            <div class="doc-item">
+                                <h4>🔑 Key Entities</h4>
+                                <div id="key-entities-tags" class="entity-tags">
+                                    <!-- Populated by JS -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="doc-footer">
+                            <button id="view-full-docs-btn" class="secondary-btn">Read Full Documentation Report
+                                →</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Full Documentation View -->
+            <section id="documentation-view" class="view-section hidden">
+                <div class="doc-report-container card">
+                    <div class="report-header">
+                        <h1 id="report-title">Dataset Documentation Report</h1>
+                        <p class="report-meta" id="report-meta">Generated by InsightDB AI</p>
+                    </div>
+
+                    <div class="report-content">
+                        <div class="report-section">
+                            <h3>Executive Summary</h3>
+                            <p id="report-summary">Loading documentation...</p>
+                        </div>
+
+                        <div class="report-section">
+                            <h3>Architecture & Business Logic</h3>
+                            <p id="report-architecture">Analyzing relationships...</p>
+                        </div>
+
+                        <div class="report-section">
+                            <h3>Key Business Entities</h3>
+                            <div id="report-entities" class="entities-detailed-grid">
+                                <!-- JS Populated -->
+                            </div>
+                        </div>
+
+                        <div class="report-section">
+                            <h3>Strategic Business Utility</h3>
+                            <ul id="report-utility-list" class="utility-list">
+                                <!-- JS Populated -->
+                            </ul>
+                        </div>
+
+                        <div class="report-section">
+                            <h3>Data Integrity Assessment</h3>
+                            <p id="report-quality">Evaluating quality...</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Table Details View -->
+            <section id="table-view" class="view-section hidden">
+                <div class="header-row">
+                    <h2 id="current-table-name">Table Name</h2>
+                    <div class="trust-badge" id="trust-display">
+                        Trust Score: <span id="trust-score-val">-</span>
+                    </div>
+                </div>
+
+                <div class="tabs">
+                    <button class="tab-btn active" data-tab="schema">Schema</button>
+                    <button class="tab-btn" data-tab="quality">Quality Issues</button>
+                    <button class="tab-btn" data-tab="ai">AI Insights</button>
+                </div>
+
+                <div class="tab-content">
+
+                    <!-- Schema Tab -->
+                    <div id="tab-schema" class="tab-pane active">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Column Name</th>
+                                    <th>Type</th>
+                                    <th>Target</th>
+                                    <th>Null %</th>
+                                    <th>Unique %</th>
+                                </tr>
+                            </thead>
+                            <tbody id="schema-body">
+                                <!-- JS Populated -->
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Quality Tab -->
+                    <div id="tab-quality" class="tab-pane">
+                        <div class="quality-grid">
+                            <div class="card">
+                                <h3>ID Health</h3>
+                                <p id="id-health-val">-</p>
+                            </div>
+                            <div class="card">
+                                <h3>FK Integrity</h3>
+                                <p id="fk-integrity-val">-</p>
+                            </div>
+                            <div class="card">
+                                <h3>Completeness</h3>
+                                <p id="completeness-val">-</p>
+                            </div>
+                            <div class="card">
+                                <h3>Numeric Sanity</h3>
+                                <p id="numeric-sanity-val">-</p>
+                            </div>
+                            <div class="card">
+                                <h3>Freshness</h3>
+                                <p id="freshness-val">-</p>
+                            </div>
+                        </div>
+                        <div class="card warn-card">
+                            <h3>Potential Issues</h3>
+                            <ul id="issues-list">
+                                <li>No issues detected.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- AI Insights Tab -->
+                    <div id="tab-ai" class="tab-pane">
+                        <div class="ai-box">
+                            <div class="ai-header">
+                                <h3>AI Smart Analysis</h3>
+                                <button id="gen-analysis-btn" class="primary-btn">Generate Analysis</button>
+                            </div>
+                            <div id="ai-summary-content" class="ai-content-placeholder">
+                                Click the button to generate a context-aware business analysis for this table.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Chat Interface -->
+        <aside class="chat-panel hidden" id="chat-panel">
+            <div class="chat-header">
+                <h3>Data Assistant</h3>
+                <button id="minimize-chat-btn" class="icon-btn" title="Minimize Chat">▶</button>
+            </div>
+            <div class="chat-messages" id="chat-messages">
+                <div class="msg bot">
+                    Hello! I'm your Data Assistant. Ask me anything about your e-commerce data.
+                </div>
+            </div>
+            <div class="chat-input-area">
+                <input type="text" id="chat-input" placeholder="Ask a question..." />
+                <button id="send-btn">➤</button>
+            </div>
+        </aside>
+
+    </div>
+
+    <!-- Floating Chat Trigger (Visible when minimized) -->
+    <button id="open-chat-btn" class="floating-toggle-btn" title="Open Data Assistant">💬</button>
+
+    <!-- Sidebar Re-open Trigger (Visible when collapsed) -->
+    <button id="open-sidebar-btn" class="sidebar-reopen-btn hidden" title="Open Sidebar">📁</button>
+
+    <!-- Firebase Configuration -->
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/12.9.0/firebase-app.js";
+        import { getAuth, GoogleAuthProvider, signInWithPopup, signInWithEmailAndPassword, createUserWithEmailAndPassword, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/12.9.0/firebase-auth.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyAc5e0YaVjy2PmtzFZrKyugeg4Ghq3v1AQ",
+            authDomain: "insightdb-95f81.firebaseapp.com",
+            projectId: "insightdb-95f81",
+            storageBucket: "insightdb-95f81.firebasestorage.app",
+            messagingSenderId: "1089086993643",
+            appId: "1:1089086993643:web:bbf8dd25a0ca4b13fbbaae",
+            measurementId: "G-XY3BD06413"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+        const provider = new GoogleAuthProvider();
+
+        // Attach to window for script.js to access
+        window.firebaseAuth = {
+            auth,
+            provider,
+            signInWithPopup,
+            signInWithEmailAndPassword,
+            createUserWithEmailAndPassword,
+            onAuthStateChanged,
+            signOut
+        };
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>

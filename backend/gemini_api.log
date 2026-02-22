@@ -1,0 +1,2600 @@
+[2026-02-21 22:21:47.420493] Initialized with Token. Key prefix: AQ.Ab...
+[2026-02-21 22:21:47.423039] Calling gemini-1.5-flash...
+[2026-02-21 22:21:49.274578] Error (gemini-1.5-flash) 401: {
+  "error": {
+    "code": 401,
+    "message": "Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+    "status": "UNAUTHENTICATED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "API_KEY_SERVICE_BLOCKED",
+        "metadata": {
+          "method": "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent",
+          "service": "generativelanguage.googleapis.com"
+        }
+      }
+    ]
+  }
+}
+
+[2026-02-21 22:21:49.280179] CHAT Key failed auth. Swapping to ENV key for next attempt.
+[2026-02-21 22:21:49.283145] Calling gemini-2.0-flash...
+[2026-02-21 22:21:50.920084] Error (gemini-2.0-flash) 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\nPlease retry in 10.16120168s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count",
+            "quotaId": "GenerateContentInputTokensPerModelPerMinute-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.0-flash"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerMinutePerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "model": "gemini-2.0-flash",
+              "location": "global"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerDayPerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "model": "gemini-2.0-flash",
+              "location": "global"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "10s"
+      }
+    ]
+  }
+}
+
+[2026-02-21 22:22:13.045243] Calling gemini-1.5-flash...
+[2026-02-21 22:22:15.827108] Error (gemini-1.5-flash) 404: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+[2026-02-21 22:22:15.830382] Calling gemini-2.0-flash...
+[2026-02-21 22:22:18.509255] Error (gemini-2.0-flash) 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\nPlease retry in 42.574359345s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count",
+            "quotaId": "GenerateContentInputTokensPerModelPerMinute-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.0-flash"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerMinutePerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "model": "gemini-2.0-flash",
+              "location": "global"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerDayPerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.0-flash"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "42s"
+      }
+    ]
+  }
+}
+
+[2026-02-21 22:22:52.186758] Calling gemini-1.5-flash...
+[2026-02-21 22:22:53.632225] Error (gemini-1.5-flash) 404: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+[2026-02-21 22:22:53.635751] Calling gemini-2.0-flash...
+[2026-02-21 22:22:55.502741] Error (gemini-2.0-flash) 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\nPlease retry in 5.578473838s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count",
+            "quotaId": "GenerateContentInputTokensPerModelPerMinute-FreeTier",
+            "quotaDimensions": {
+              "model": "gemini-2.0-flash",
+              "location": "global"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerMinutePerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.0-flash"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerDayPerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "model": "gemini-2.0-flash",
+              "location": "global"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "5s"
+      }
+    ]
+  }
+}
+
+[2026-02-21 22:23:30.855854] Initialized with Token. Key prefix: AQ.Ab...
+[2026-02-21 22:23:30.857048] Calling gemini-1.5-flash...
+[2026-02-21 22:23:31.810965] Error (gemini-1.5-flash) 401: {
+  "error": {
+    "code": 401,
+    "message": "Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+    "status": "UNAUTHENTICATED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "API_KEY_SERVICE_BLOCKED",
+        "metadata": {
+          "method": "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent",
+          "service": "generativelanguage.googleapis.com"
+        }
+      }
+    ]
+  }
+}
+
+[2026-02-21 22:23:31.812399] CHAT Key failed auth. Swapping to ENV key for next attempt.
+[2026-02-21 22:23:31.813153] Calling gemini-2.0-flash...
+[2026-02-21 22:23:33.077679] Error (gemini-2.0-flash) 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\nPlease retry in 27.994591117s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count",
+            "quotaId": "GenerateContentInputTokensPerModelPerMinute-FreeTier",
+            "quotaDimensions": {
+              "model": "gemini-2.0-flash",
+              "location": "global"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerMinutePerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.0-flash"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerDayPerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "model": "gemini-2.0-flash",
+              "location": "global"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "27s"
+      }
+    ]
+  }
+}
+
+[2026-02-21 22:23:50.451177] Calling gemini-1.5-flash...
+[2026-02-21 22:23:51.793747] Error (gemini-1.5-flash) 404: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+[2026-02-21 22:23:51.794929] Calling gemini-2.0-flash...
+[2026-02-21 22:23:53.144924] Error (gemini-2.0-flash) 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\nPlease retry in 7.936460609s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count",
+            "quotaId": "GenerateContentInputTokensPerModelPerMinute-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.0-flash"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerMinutePerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "model": "gemini-2.0-flash",
+              "location": "global"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerDayPerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "model": "gemini-2.0-flash",
+              "location": "global"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "7s"
+      }
+    ]
+  }
+}
+
+[2026-02-21 22:23:58.876898] Calling gemini-1.5-flash...
+[2026-02-21 22:24:00.103754] Error (gemini-1.5-flash) 404: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+[2026-02-21 22:24:00.104824] Calling gemini-2.0-flash...
+[2026-02-21 22:24:01.268894] Error (gemini-2.0-flash) 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\nPlease retry in 59.818974495s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerDayPerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "model": "gemini-2.0-flash",
+              "location": "global"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerMinutePerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.0-flash"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count",
+            "quotaId": "GenerateContentInputTokensPerModelPerMinute-FreeTier",
+            "quotaDimensions": {
+              "model": "gemini-2.0-flash",
+              "location": "global"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "59s"
+      }
+    ]
+  }
+}
+
+[2026-02-21 22:25:25.747200] Initialized with Token. Key prefix: AQ.Ab...
+[2026-02-21 22:25:25.749938] Calling gemini-2.5-flash...
+[2026-02-21 22:25:27.306411] Error (gemini-2.5-flash) 401: {
+  "error": {
+    "code": 401,
+    "message": "Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+    "status": "UNAUTHENTICATED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "API_KEY_SERVICE_BLOCKED",
+        "metadata": {
+          "method": "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent",
+          "service": "generativelanguage.googleapis.com"
+        }
+      }
+    ]
+  }
+}
+
+[2026-02-21 22:25:27.311089] CHAT Key failed auth. Swapping to ENV key for next attempt.
+[2026-02-21 22:25:27.313393] Calling gemini-2.0-flash...
+[2026-02-21 22:25:28.915417] Error (gemini-2.0-flash) 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\nPlease retry in 32.157807089s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count",
+            "quotaId": "GenerateContentInputTokensPerModelPerMinute-FreeTier",
+            "quotaDimensions": {
+              "model": "gemini-2.0-flash",
+              "location": "global"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerMinutePerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.0-flash"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerDayPerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.0-flash"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "32s"
+      }
+    ]
+  }
+}
+
+[2026-02-21 22:25:28.917355] Calling gemini-1.5-flash...
+[2026-02-21 22:25:30.548689] Error (gemini-1.5-flash) 404: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+[2026-02-21 22:25:37.034478] Calling gemini-2.5-flash...
+[2026-02-21 22:25:39.678942] Success (gemini-2.5-flash)
+[2026-02-21 22:25:44.114622] Calling gemini-2.5-flash...
+[2026-02-21 22:25:51.223978] Success (gemini-2.5-flash)
+[2026-02-21 22:25:51.227765] JSON Parse Error: Unterminated string starting at: line 2 column 14 (char 15)
+[2026-02-21 22:26:07.758371] Calling gemini-2.5-flash...
+[2026-02-21 22:26:10.655772] Success (gemini-2.5-flash)
+[2026-02-21 22:30:19.856535] Initialized with Token. Key prefix: AQ.Ab...
+[2026-02-21 22:30:19.858329] Calling gemini-2.5-flash...
+[2026-02-21 22:30:21.127866] Error (gemini-2.5-flash) 401: {
+  "error": {
+    "code": 401,
+    "message": "Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+    "status": "UNAUTHENTICATED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "API_KEY_SERVICE_BLOCKED",
+        "metadata": {
+          "method": "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent",
+          "service": "generativelanguage.googleapis.com"
+        }
+      }
+    ]
+  }
+}
+
+[2026-02-21 22:30:21.129326] CHAT Key failed auth. Swapping to ENV key for next attempt.
+[2026-02-21 22:30:21.130640] Calling gemini-2.0-flash...
+[2026-02-21 22:30:22.482626] Error (gemini-2.0-flash) 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\nPlease retry in 38.581101531s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count",
+            "quotaId": "GenerateContentInputTokensPerModelPerMinute-FreeTier",
+            "quotaDimensions": {
+              "model": "gemini-2.0-flash",
+              "location": "global"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerMinutePerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.0-flash"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerDayPerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "model": "gemini-2.0-flash",
+              "location": "global"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "38s"
+      }
+    ]
+  }
+}
+
+[2026-02-21 22:30:22.484213] Calling gemini-1.5-flash...
+[2026-02-21 22:30:23.873079] Error (gemini-1.5-flash) 404: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+[2026-02-21 22:32:48.335160] Initialized with Token. Key prefix: AQ.Ab...
+[2026-02-21 22:32:48.336995] Calling gemini-2.5-flash...
+[2026-02-21 22:32:49.762755] Error (gemini-2.5-flash) 401: {
+  "error": {
+    "code": 401,
+    "message": "Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+    "status": "UNAUTHENTICATED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "API_KEY_SERVICE_BLOCKED",
+        "metadata": {
+          "method": "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent",
+          "service": "generativelanguage.googleapis.com"
+        }
+      }
+    ]
+  }
+}
+
+[2026-02-21 22:32:49.764209] CHAT Key failed auth. Swapping to ENV key for next attempt.
+[2026-02-21 22:32:49.765292] Calling gemini-2.0-flash...
+[2026-02-21 22:32:51.141595] Error (gemini-2.0-flash) 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\nPlease retry in 9.921665907s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerDayPerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "model": "gemini-2.0-flash",
+              "location": "global"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerMinutePerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.0-flash"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count",
+            "quotaId": "GenerateContentInputTokensPerModelPerMinute-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.0-flash"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "9s"
+      }
+    ]
+  }
+}
+
+[2026-02-21 22:32:51.143541] Calling gemini-1.5-flash...
+[2026-02-21 22:32:52.489232] Error (gemini-1.5-flash) 404: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+[2026-02-21 22:33:01.733664] Calling gemini-2.5-flash...
+[2026-02-21 22:33:07.947156] Success (gemini-2.5-flash)
+[2026-02-21 22:33:07.953066] JSON Parse Error: Unterminated string starting at: line 4 column 13 (char 323)
+[2026-02-21 22:33:13.185527] Calling gemini-2.5-flash...
+[2026-02-21 22:33:15.710645] Success (gemini-2.5-flash)
+[2026-02-21 22:38:26.993834] Initialized with Token. Key prefix: AQ.Ab...
+[2026-02-21 22:38:26.998785] Calling gemini-2.5-flash...
+[2026-02-21 22:38:28.540254] Error (gemini-2.5-flash) 401: {
+  "error": {
+    "code": 401,
+    "message": "Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+    "status": "UNAUTHENTICATED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "API_KEY_SERVICE_BLOCKED",
+        "metadata": {
+          "method": "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent",
+          "service": "generativelanguage.googleapis.com"
+        }
+      }
+    ]
+  }
+}
+
+[2026-02-21 22:38:28.541966] CHAT Key failed auth. Swapping to ENV key for next attempt.
+[2026-02-21 22:38:28.544212] Calling gemini-2.0-flash...
+[2026-02-21 22:38:30.026863] Error (gemini-2.0-flash) 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\nPlease retry in 31.024076385s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count",
+            "quotaId": "GenerateContentInputTokensPerModelPerMinute-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.0-flash"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerMinutePerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.0-flash"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerDayPerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.0-flash"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "31s"
+      }
+    ]
+  }
+}
+
+[2026-02-21 22:38:30.028924] Calling gemini-1.5-flash...
+[2026-02-21 22:38:31.426661] Error (gemini-1.5-flash) 404: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+[2026-02-21 22:38:52.224934] Initialized with Token. Key prefix: AQ.Ab...
+[2026-02-21 22:38:52.227181] Calling gemini-2.5-flash...
+[2026-02-21 22:38:53.307428] Error (gemini-2.5-flash) 401: {
+  "error": {
+    "code": 401,
+    "message": "Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+    "status": "UNAUTHENTICATED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "API_KEY_SERVICE_BLOCKED",
+        "metadata": {
+          "service": "generativelanguage.googleapis.com",
+          "method": "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent"
+        }
+      }
+    ]
+  }
+}
+
+[2026-02-21 22:38:53.309494] CHAT Key failed auth. Swapping to ENV key for next attempt.
+[2026-02-21 22:38:53.311226] Calling gemini-2.0-flash...
+[2026-02-21 22:38:54.757095] Error (gemini-2.0-flash) 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\nPlease retry in 6.301415773s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count",
+            "quotaId": "GenerateContentInputTokensPerModelPerMinute-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.0-flash"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerMinutePerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.0-flash"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerDayPerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.0-flash"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "6s"
+      }
+    ]
+  }
+}
+
+[2026-02-21 22:38:54.758568] Calling gemini-1.5-flash...
+[2026-02-21 22:38:56.131447] Error (gemini-1.5-flash) 404: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+[2026-02-21 22:39:34.615278] Initialized with Token. Key prefix: AQ.Ab...
+[2026-02-21 22:39:34.617944] Calling gemini-2.5-flash...
+[2026-02-21 22:39:35.694424] Error (gemini-2.5-flash) 401: {
+  "error": {
+    "code": 401,
+    "message": "Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+    "status": "UNAUTHENTICATED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "API_KEY_SERVICE_BLOCKED",
+        "metadata": {
+          "method": "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent",
+          "service": "generativelanguage.googleapis.com"
+        }
+      }
+    ]
+  }
+}
+
+[2026-02-21 22:39:35.695947] CHAT Key failed auth. Swapping to ENV key for next attempt.
+[2026-02-21 22:39:35.697228] Calling gemini-2.0-flash...
+[2026-02-21 22:39:37.067077] Error (gemini-2.0-flash) 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\nPlease retry in 23.984694215s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count",
+            "quotaId": "GenerateContentInputTokensPerModelPerMinute-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.0-flash"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerMinutePerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.0-flash"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerDayPerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.0-flash"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "23s"
+      }
+    ]
+  }
+}
+
+[2026-02-21 22:39:37.069723] Calling gemini-1.5-flash...
+[2026-02-21 22:39:38.459449] Error (gemini-1.5-flash) 404: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+[2026-02-21 22:47:11.628182] Initialized with Token. Key prefix: AQ.Ab...
+[2026-02-21 22:47:11.631775] Calling gemini-2.5-flash...
+[2026-02-21 22:47:13.181578] Error (gemini-2.5-flash) 401: {
+  "error": {
+    "code": 401,
+    "message": "Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+    "status": "UNAUTHENTICATED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "API_KEY_SERVICE_BLOCKED",
+        "metadata": {
+          "method": "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent",
+          "service": "generativelanguage.googleapis.com"
+        }
+      }
+    ]
+  }
+}
+
+[2026-02-21 22:47:13.182983] CHAT Key failed auth. Swapping to ENV key for next attempt.
+[2026-02-21 22:47:13.184275] Calling gemini-2.0-flash...
+[2026-02-21 22:47:14.654102] Error (gemini-2.0-flash) 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\nPlease retry in 46.394494923s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerDayPerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.0-flash"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerMinutePerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.0-flash"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count",
+            "quotaId": "GenerateContentInputTokensPerModelPerMinute-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.0-flash"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "46s"
+      }
+    ]
+  }
+}
+
+[2026-02-21 22:47:14.655785] Calling gemini-1.5-flash...
+[2026-02-21 22:47:16.021418] Error (gemini-1.5-flash) 404: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+[2026-02-21 22:47:46.019565] Calling gemini-2.5-flash...
+[2026-02-21 22:47:49.581303] Success (gemini-2.5-flash)
+[2026-02-21 22:49:28.162826] Initialized with Token. Key prefix: AQ.Ab...
+[2026-02-21 22:49:28.165083] Calling gemini-2.5-flash...
+[2026-02-21 22:49:29.573163] Error (gemini-2.5-flash) 401: {
+  "error": {
+    "code": 401,
+    "message": "Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+    "status": "UNAUTHENTICATED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "API_KEY_SERVICE_BLOCKED",
+        "metadata": {
+          "method": "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent",
+          "service": "generativelanguage.googleapis.com"
+        }
+      }
+    ]
+  }
+}
+
+[2026-02-21 22:49:29.574414] CHAT Key failed auth. Swapping to ENV key for next attempt.
+[2026-02-21 22:49:29.575453] Calling gemini-2.0-flash...
+[2026-02-21 22:49:30.936487] Error (gemini-2.0-flash) 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\nPlease retry in 30.090378701s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerDayPerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.0-flash"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerMinutePerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.0-flash"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count",
+            "quotaId": "GenerateContentInputTokensPerModelPerMinute-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.0-flash"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "30s"
+      }
+    ]
+  }
+}
+
+[2026-02-21 22:49:30.937791] Calling gemini-1.5-flash...
+[2026-02-21 22:49:31.985205] Error (gemini-1.5-flash) 404: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+[2026-02-22 05:52:19.326447] Initialized with Token. Key prefix: AQ.Ab...
+[2026-02-22 05:52:19.328768] Calling gemini-2.5-flash...
+[2026-02-22 05:52:20.873333] Error (gemini-2.5-flash) 401: {
+  "error": {
+    "code": 401,
+    "message": "Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+    "status": "UNAUTHENTICATED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "API_KEY_SERVICE_BLOCKED",
+        "metadata": {
+          "method": "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent",
+          "service": "generativelanguage.googleapis.com"
+        }
+      }
+    ]
+  }
+}
+
+[2026-02-22 05:52:20.874630] CHAT Key failed auth. Swapping to ENV key for next attempt.
+[2026-02-22 05:52:20.876157] Calling gemini-2.0-flash...
+[2026-02-22 05:52:22.298234] Error (gemini-2.0-flash) 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\nPlease retry in 39.190152906s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count",
+            "quotaId": "GenerateContentInputTokensPerModelPerMinute-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.0-flash"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerMinutePerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.0-flash"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerDayPerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.0-flash"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "39s"
+      }
+    ]
+  }
+}
+
+[2026-02-22 05:52:22.300509] Calling gemini-1.5-flash...
+[2026-02-22 05:52:23.731985] Error (gemini-1.5-flash) 404: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+[2026-02-22 05:52:34.535530] Initialized with Token. Key prefix: AQ.Ab...
+[2026-02-22 05:52:34.537621] Calling gemini-2.5-flash...
+[2026-02-22 05:52:35.914385] Error (gemini-2.5-flash) 401: {
+  "error": {
+    "code": 401,
+    "message": "Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+    "status": "UNAUTHENTICATED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "API_KEY_SERVICE_BLOCKED",
+        "metadata": {
+          "method": "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent",
+          "service": "generativelanguage.googleapis.com"
+        }
+      }
+    ]
+  }
+}
+
+[2026-02-22 05:52:35.916071] CHAT Key failed auth. Swapping to ENV key for next attempt.
+[2026-02-22 05:52:35.917424] Calling gemini-2.0-flash...
+[2026-02-22 05:52:37.350608] Error (gemini-2.0-flash) 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\nPlease retry in 24.13328276s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerDayPerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "model": "gemini-2.0-flash",
+              "location": "global"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerMinutePerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.0-flash"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count",
+            "quotaId": "GenerateContentInputTokensPerModelPerMinute-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.0-flash"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "24s"
+      }
+    ]
+  }
+}
+
+[2026-02-22 05:52:37.351977] Calling gemini-1.5-flash...
+[2026-02-22 05:52:38.785694] Error (gemini-1.5-flash) 404: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+[2026-02-22 05:52:55.728688] Initialized with Token. Key prefix: AQ.Ab...
+[2026-02-22 05:52:55.730847] Calling gemini-2.5-flash...
+[2026-02-22 05:52:57.213654] Error (gemini-2.5-flash) 401: {
+  "error": {
+    "code": 401,
+    "message": "Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+    "status": "UNAUTHENTICATED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "API_KEY_SERVICE_BLOCKED",
+        "metadata": {
+          "method": "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent",
+          "service": "generativelanguage.googleapis.com"
+        }
+      }
+    ]
+  }
+}
+
+[2026-02-22 05:52:57.214886] CHAT Key failed auth. Swapping to ENV key for next attempt.
+[2026-02-22 05:52:57.215936] Calling gemini-2.0-flash...
+[2026-02-22 05:52:58.650260] Error (gemini-2.0-flash) 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\nPlease retry in 2.820641814s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerDayPerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.0-flash"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerMinutePerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.0-flash"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count",
+            "quotaId": "GenerateContentInputTokensPerModelPerMinute-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.0-flash"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "2s"
+      }
+    ]
+  }
+}
+
+[2026-02-22 05:52:58.652668] Calling gemini-1.5-flash...
+[2026-02-22 05:53:00.186015] Error (gemini-1.5-flash) 404: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+[2026-02-22 05:59:33.437602] Initialized with Token. Key prefix: AQ.Ab...
+[2026-02-22 05:59:33.440691] Calling gemini-2.5-flash...
+[2026-02-22 05:59:34.852896] Error (gemini-2.5-flash) 401: {
+  "error": {
+    "code": 401,
+    "message": "Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+    "status": "UNAUTHENTICATED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "API_KEY_SERVICE_BLOCKED",
+        "metadata": {
+          "method": "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent",
+          "service": "generativelanguage.googleapis.com"
+        }
+      }
+    ]
+  }
+}
+
+[2026-02-22 05:59:34.854222] CHAT Key failed auth. Swapping to ENV key for next attempt.
+[2026-02-22 05:59:34.855378] Calling gemini-2.0-flash...
+[2026-02-22 05:59:36.262952] Error (gemini-2.0-flash) 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\nPlease retry in 25.177740537s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count",
+            "quotaId": "GenerateContentInputTokensPerModelPerMinute-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.0-flash"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerMinutePerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "model": "gemini-2.0-flash",
+              "location": "global"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerDayPerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.0-flash"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "25s"
+      }
+    ]
+  }
+}
+
+[2026-02-22 05:59:36.264906] Calling gemini-1.5-flash...
+[2026-02-22 05:59:37.629892] Error (gemini-1.5-flash) 404: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+[2026-02-22 06:00:05.220800] Initialized with Token. Key prefix: AQ.Ab...
+[2026-02-22 06:00:05.222639] Calling gemini-2.5-flash...
+[2026-02-22 06:00:06.568998] Error (gemini-2.5-flash) 401: {
+  "error": {
+    "code": 401,
+    "message": "Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+    "status": "UNAUTHENTICATED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "API_KEY_SERVICE_BLOCKED",
+        "metadata": {
+          "service": "generativelanguage.googleapis.com",
+          "method": "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent"
+        }
+      }
+    ]
+  }
+}
+
+[2026-02-22 06:00:06.570380] CHAT Key failed auth. Swapping to ENV key for next attempt.
+[2026-02-22 06:00:06.571406] Calling gemini-2.0-flash...
+[2026-02-22 06:00:08.005019] Error (gemini-2.0-flash) 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\nPlease retry in 53.465980488s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerDayPerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "model": "gemini-2.0-flash",
+              "location": "global"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerMinutePerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "model": "gemini-2.0-flash",
+              "location": "global"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count",
+            "quotaId": "GenerateContentInputTokensPerModelPerMinute-FreeTier",
+            "quotaDimensions": {
+              "model": "gemini-2.0-flash",
+              "location": "global"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "53s"
+      }
+    ]
+  }
+}
+
+[2026-02-22 06:00:08.007060] Calling gemini-1.5-flash...
+[2026-02-22 06:00:09.438255] Error (gemini-1.5-flash) 404: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+[2026-02-22 06:05:07.918687] Initialized with Token. Key prefix: AQ.Ab...
+[2026-02-22 06:05:07.921839] Calling gemini-2.5-flash...
+[2026-02-22 06:05:09.668904] Error (gemini-2.5-flash) 401: {
+  "error": {
+    "code": 401,
+    "message": "Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+    "status": "UNAUTHENTICATED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "API_KEY_SERVICE_BLOCKED",
+        "metadata": {
+          "method": "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent",
+          "service": "generativelanguage.googleapis.com"
+        }
+      }
+    ]
+  }
+}
+
+[2026-02-22 06:05:09.671643] CHAT Key failed auth. Swapping to ENV key for next attempt.
+[2026-02-22 06:05:09.674612] Calling gemini-2.0-flash...
+[2026-02-22 06:05:11.208200] Error (gemini-2.0-flash) 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\nPlease retry in 50.224879878s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerDayPerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.0-flash"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerMinutePerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "model": "gemini-2.0-flash",
+              "location": "global"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count",
+            "quotaId": "GenerateContentInputTokensPerModelPerMinute-FreeTier",
+            "quotaDimensions": {
+              "model": "gemini-2.0-flash",
+              "location": "global"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "50s"
+      }
+    ]
+  }
+}
+
+[2026-02-22 06:05:11.210803] Calling gemini-1.5-flash...
+[2026-02-22 06:05:12.743675] Error (gemini-1.5-flash) 404: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+[2026-02-22 06:05:22.530927] Calling gemini-2.5-flash...
+[2026-02-22 06:05:29.850221] Success (gemini-2.5-flash)
+[2026-02-22 06:05:29.855295] Full Documentation Parse Error: Unterminated string starting at: line 3 column 24 (char 98)
+[2026-02-22 06:06:18.069547] Initialized with Token. Key prefix: AQ.Ab...
+[2026-02-22 06:06:18.072335] Calling gemini-2.5-flash...
+[2026-02-22 06:06:19.825472] Error (gemini-2.5-flash) 401: {
+  "error": {
+    "code": 401,
+    "message": "Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+    "status": "UNAUTHENTICATED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "API_KEY_SERVICE_BLOCKED",
+        "metadata": {
+          "method": "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent",
+          "service": "generativelanguage.googleapis.com"
+        }
+      }
+    ]
+  }
+}
+
+[2026-02-22 06:06:19.826644] CHAT Key failed auth. Swapping to ENV key for next attempt.
+[2026-02-22 06:06:19.828732] Calling gemini-2.0-flash...
+[2026-02-22 06:06:21.246409] Error (gemini-2.0-flash) 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\nPlease retry in 40.187974166s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count",
+            "quotaId": "GenerateContentInputTokensPerModelPerMinute-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.0-flash"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerMinutePerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.0-flash"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerDayPerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.0-flash"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "40s"
+      }
+    ]
+  }
+}
+
+[2026-02-22 06:06:21.248088] Calling gemini-1.5-flash...
+[2026-02-22 06:06:22.679510] Error (gemini-1.5-flash) 404: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+[2026-02-22 06:08:31.152239] Calling gemini-2.5-flash...
+[2026-02-22 06:08:38.253231] Success (gemini-2.5-flash)
+[2026-02-22 06:08:38.257820] Full Documentation Parse Error: Unterminated string starting at: line 3 column 24 (char 119)
+[2026-02-22 06:08:44.042560] Initialized with Token. Key prefix: AQ.Ab...
+[2026-02-22 06:08:44.045070] Calling gemini-2.5-flash...
+[2026-02-22 06:08:45.410548] Error (gemini-2.5-flash) 401: {
+  "error": {
+    "code": 401,
+    "message": "Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+    "status": "UNAUTHENTICATED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "API_KEY_SERVICE_BLOCKED",
+        "metadata": {
+          "method": "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent",
+          "service": "generativelanguage.googleapis.com"
+        }
+      }
+    ]
+  }
+}
+
+[2026-02-22 06:08:45.411761] CHAT Key failed auth. Swapping to ENV key for next attempt.
+[2026-02-22 06:08:45.413689] Calling gemini-2.0-flash...
+[2026-02-22 06:08:46.839808] Error (gemini-2.0-flash) 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\nPlease retry in 14.600719461s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count",
+            "quotaId": "GenerateContentInputTokensPerModelPerMinute-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.0-flash"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerMinutePerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.0-flash"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerDayPerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.0-flash"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "14s"
+      }
+    ]
+  }
+}
+
+[2026-02-22 06:08:46.842272] Calling gemini-1.5-flash...
+[2026-02-22 06:08:48.290113] Error (gemini-1.5-flash) 404: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+[2026-02-22 06:13:38.230882] Initialized with Token. Key prefix: AQ.Ab...
+[2026-02-22 06:13:38.232951] Calling gemini-2.5-flash...
+[2026-02-22 06:13:39.685512] Error (gemini-2.5-flash) 401: {
+  "error": {
+    "code": 401,
+    "message": "Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+    "status": "UNAUTHENTICATED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "API_KEY_SERVICE_BLOCKED",
+        "metadata": {
+          "method": "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent",
+          "service": "generativelanguage.googleapis.com"
+        }
+      }
+    ]
+  }
+}
+
+[2026-02-22 06:13:39.687006] CHAT Key failed auth. Swapping to ENV key for next attempt.
+[2026-02-22 06:13:39.688551] Calling gemini-2.0-flash...
+[2026-02-22 06:13:41.150575] Error (gemini-2.0-flash) 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\nPlease retry in 20.341589846s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count",
+            "quotaId": "GenerateContentInputTokensPerModelPerMinute-FreeTier",
+            "quotaDimensions": {
+              "model": "gemini-2.0-flash",
+              "location": "global"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerMinutePerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "model": "gemini-2.0-flash",
+              "location": "global"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerDayPerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "model": "gemini-2.0-flash",
+              "location": "global"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "20s"
+      }
+    ]
+  }
+}
+
+[2026-02-22 06:13:41.153063] Calling gemini-1.5-flash...
+[2026-02-22 06:13:42.499221] Error (gemini-1.5-flash) 404: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+[2026-02-22 06:15:44.922160] Initialized with Token. Key prefix: AQ.Ab...
+[2026-02-22 06:15:44.924246] Calling gemini-2.5-flash...
+[2026-02-22 06:15:46.365116] Error (gemini-2.5-flash) 401: {
+  "error": {
+    "code": 401,
+    "message": "Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+    "status": "UNAUTHENTICATED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "API_KEY_SERVICE_BLOCKED",
+        "metadata": {
+          "service": "generativelanguage.googleapis.com",
+          "method": "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent"
+        }
+      }
+    ]
+  }
+}
+
+[2026-02-22 06:15:46.366770] CHAT Key failed auth. Swapping to ENV key for next attempt.
+[2026-02-22 06:15:46.368837] Calling gemini-2.0-flash...
+[2026-02-22 06:15:47.918831] Error (gemini-2.0-flash) 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\nPlease retry in 13.562609405s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count",
+            "quotaId": "GenerateContentInputTokensPerModelPerMinute-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.0-flash"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerMinutePerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.0-flash"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerDayPerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.0-flash"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "13s"
+      }
+    ]
+  }
+}
+
+[2026-02-22 06:15:47.921471] Calling gemini-1.5-flash...
+[2026-02-22 06:15:49.457237] Error (gemini-1.5-flash) 404: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+[2026-02-22 06:15:55.186565] Calling gemini-2.5-flash...
+[2026-02-22 06:16:01.432376] Success (gemini-2.5-flash)
+[2026-02-22 06:16:01.436994] Full Documentation Parse Error: Unterminated string starting at: line 3 column 24 (char 83)
+[2026-02-22 06:16:13.318462] Initialized with Token. Key prefix: AQ.Ab...
+[2026-02-22 06:16:13.320597] Calling gemini-2.5-flash...
+[2026-02-22 06:16:14.659360] Error (gemini-2.5-flash) 401: {
+  "error": {
+    "code": 401,
+    "message": "Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+    "status": "UNAUTHENTICATED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "API_KEY_SERVICE_BLOCKED",
+        "metadata": {
+          "method": "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent",
+          "service": "generativelanguage.googleapis.com"
+        }
+      }
+    ]
+  }
+}
+
+[2026-02-22 06:16:14.660718] CHAT Key failed auth. Swapping to ENV key for next attempt.
+[2026-02-22 06:16:14.661975] Calling gemini-2.0-flash...
+[2026-02-22 06:16:16.004626] Error (gemini-2.0-flash) 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\nPlease retry in 45.372739433s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerDayPerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.0-flash"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerMinutePerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.0-flash"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count",
+            "quotaId": "GenerateContentInputTokensPerModelPerMinute-FreeTier",
+            "quotaDimensions": {
+              "model": "gemini-2.0-flash",
+              "location": "global"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "45s"
+      }
+    ]
+  }
+}
+
+[2026-02-22 06:16:16.006540] Calling gemini-1.5-flash...
+[2026-02-22 06:16:17.408500] Error (gemini-1.5-flash) 404: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+[2026-02-22 06:21:50.666531] Initialized with Token. Key prefix: AQ.Ab...
+[2026-02-22 06:21:50.668692] Calling gemini-2.5-flash (v1beta)...
+[2026-02-22 06:21:52.145725] Error (gemini-2.5-flash - v1beta) 401: {
+  "error": {
+    "code": 401,
+    "message": "Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+    "status": "UNAUTHENTICATED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "API_KEY_SERVICE_BLOCKED",
+        "metadata": {
+          "method": "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent",
+          "service": "generativelanguage.googleapis.com"
+        }
+      }
+    ]
+  }
+}
+
+[2026-02-22 06:21:52.147408] CHAT Key failed auth. Swapping to ENV key.
+[2026-02-22 06:21:52.149145] Calling gemini-2.5-flash (v1)...
+[2026-02-22 06:21:53.583281] Error (gemini-2.5-flash - v1) 400: {
+  "error": {
+    "code": 400,
+    "message": "Invalid JSON payload received. Unknown name \"responseMimeType\" at 'generation_config': Cannot find field.",
+    "status": "INVALID_ARGUMENT",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.BadRequest",
+        "fieldViolations": [
+          {
+            "field": "generation_config",
+            "description": "Invalid JSON payload received. Unknown name \"responseMimeType\" at 'generation_config': Cannot find field."
+          }
+        ]
+      }
+    ]
+  }
+}
+
+[2026-02-22 06:21:56.983321] Calling gemini-2.5-flash (v1beta)...
+[2026-02-22 06:22:08.016934] Success (gemini-2.5-flash - v1beta)
+[2026-02-22 06:37:33.122305] Initialized with Token. Key prefix: AQ.Ab...
+[2026-02-22 06:37:33.123792] Calling gemini-2.5-flash (v1beta)...
+[2026-02-22 06:37:34.474183] Error (gemini-2.5-flash - v1beta) 401: {
+  "error": {
+    "code": 401,
+    "message": "Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+    "status": "UNAUTHENTICATED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "API_KEY_SERVICE_BLOCKED",
+        "metadata": {
+          "method": "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent",
+          "service": "generativelanguage.googleapis.com"
+        }
+      }
+    ]
+  }
+}
+
+[2026-02-22 06:37:34.475419] CHAT Key failed auth. Swapping to ENV key.
+[2026-02-22 06:37:34.476069] Calling gemini-2.5-flash (v1)...
+[2026-02-22 06:37:35.740324] Error (gemini-2.5-flash - v1) 400: {
+  "error": {
+    "code": 400,
+    "message": "Invalid JSON payload received. Unknown name \"responseMimeType\" at 'generation_config': Cannot find field.",
+    "status": "INVALID_ARGUMENT",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.BadRequest",
+        "fieldViolations": [
+          {
+            "field": "generation_config",
+            "description": "Invalid JSON payload received. Unknown name \"responseMimeType\" at 'generation_config': Cannot find field."
+          }
+        ]
+      }
+    ]
+  }
+}
+
+[2026-02-22 06:38:44.145584] Calling gemini-2.5-flash (v1beta)...
+[2026-02-22 06:38:47.115730] Success (gemini-2.5-flash - v1beta)
+[2026-02-22 06:39:01.595377] Calling gemini-2.5-flash (v1beta)...
+[2026-02-22 06:39:03.678142] Calling gemini-2.5-flash (v1beta)...
+[2026-02-22 06:39:04.155659] Success (gemini-2.5-flash - v1beta)
+[2026-02-22 06:39:16.913125] Success (gemini-2.5-flash - v1beta)
+[2026-02-22 06:39:18.177084] Calling gemini-2.5-flash (v1beta)...
+[2026-02-22 06:39:19.678016] Error (gemini-2.5-flash - v1beta) 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 41.884285519s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerDayPerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.5-flash"
+            },
+            "quotaValue": "20"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "41s"
+      }
+    ]
+  }
+}
+
+[2026-02-22 06:39:19.679047] Quota exceeded for gemini-2.5-flash. Waiting or skipping...
+[2026-02-22 06:39:19.679833] Calling gemini-2.5-flash (v1)...
+[2026-02-22 06:39:20.899335] Error (gemini-2.5-flash - v1) 400: {
+  "error": {
+    "code": 400,
+    "message": "Invalid JSON payload received. Unknown name \"responseMimeType\" at 'generation_config': Cannot find field.",
+    "status": "INVALID_ARGUMENT",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.BadRequest",
+        "fieldViolations": [
+          {
+            "field": "generation_config",
+            "description": "Invalid JSON payload received. Unknown name \"responseMimeType\" at 'generation_config': Cannot find field."
+          }
+        ]
+      }
+    ]
+  }
+}
+
+[2026-02-22 06:43:41.098560] Calling gemini-2.5-flash (v1beta)...
+[2026-02-22 06:43:44.275925] Success (gemini-2.5-flash - v1beta)
+[2026-02-22 06:44:03.654226] Calling gemini-2.5-flash (v1beta)...
+[2026-02-22 06:44:05.234402] Error (gemini-2.5-flash - v1beta) 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 56.3408555s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerDayPerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.5-flash"
+            },
+            "quotaValue": "20"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "56s"
+      }
+    ]
+  }
+}
+
+[2026-02-22 06:44:05.235515] Quota exceeded for gemini-2.5-flash. Waiting or skipping...
+[2026-02-22 06:44:05.237004] Calling gemini-2.5-flash (v1)...
+[2026-02-22 06:44:06.467653] Error (gemini-2.5-flash - v1) 400: {
+  "error": {
+    "code": 400,
+    "message": "Invalid JSON payload received. Unknown name \"responseMimeType\" at 'generation_config': Cannot find field.",
+    "status": "INVALID_ARGUMENT",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.BadRequest",
+        "fieldViolations": [
+          {
+            "field": "generation_config",
+            "description": "Invalid JSON payload received. Unknown name \"responseMimeType\" at 'generation_config': Cannot find field."
+          }
+        ]
+      }
+    ]
+  }
+}
+
+[2026-02-22 06:54:46.814601] Initialized with Token. Key prefix: AQ.Ab...
+[2026-02-22 06:54:46.816248] Using Vertex AI Endpoint: insightdb-488114
+[2026-02-22 06:54:46.817256] Calling gemini-2.5-flash...
+[2026-02-22 06:54:49.409513] Error (gemini-2.5-flash) 401: {
+  "error": {
+    "code": 401,
+    "message": "Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+    "status": "UNAUTHENTICATED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "API_KEY_SERVICE_BLOCKED",
+        "metadata": {
+          "method": "google.cloud.aiplatform.v1.PredictionService.GenerateContent",
+          "service": "aiplatform.googleapis.com"
+        }
+      }
+    ]
+  }
+}
+
+[2026-02-22 06:54:49.410344] Vertex failed. Attempting AI Studio fallback with ENV key...
+[2026-02-22 06:54:49.411666] Using AI Studio Endpoint (Fallback)
+[2026-02-22 06:54:49.413162] Calling gemini-2.5-flash...
+[2026-02-22 06:54:51.079967] Error (gemini-2.5-flash) 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 10.457397131s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerDayPerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.5-flash"
+            },
+            "quotaValue": "20"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "10s"
+      }
+    ]
+  }
+}
+
+[2026-02-22 06:55:09.213910] Using AI Studio Endpoint (Fallback)
+[2026-02-22 06:55:09.214768] Calling gemini-2.5-flash...
+[2026-02-22 06:55:10.952681] Error (gemini-2.5-flash) 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 50.588533633s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerDayPerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.5-flash"
+            },
+            "quotaValue": "20"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "50s"
+      }
+    ]
+  }
+}
+
+[2026-02-22 07:09:41.285620] Initialized with Token. Key prefix: AQ.Ab...
+[2026-02-22 07:09:41.288284] Using Vertex AI Endpoint: insightdb-488114
+[2026-02-22 07:09:41.289404] Calling gemini-2.5-flash...
+[2026-02-22 07:09:43.716201] Error (gemini-2.5-flash) 401: {
+  "error": {
+    "code": 401,
+    "message": "Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+    "status": "UNAUTHENTICATED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "API_KEY_SERVICE_BLOCKED",
+        "metadata": {
+          "service": "aiplatform.googleapis.com",
+          "method": "google.cloud.aiplatform.v1.PredictionService.GenerateContent"
+        }
+      }
+    ]
+  }
+}
+
+[2026-02-22 07:09:54.991008] Using Vertex AI Endpoint: insightdb-488114
+[2026-02-22 07:09:54.992867] Calling gemini-2.5-flash...
+[2026-02-22 07:09:57.393839] Error (gemini-2.5-flash) 401: {
+  "error": {
+    "code": 401,
+    "message": "Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+    "status": "UNAUTHENTICATED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "API_KEY_SERVICE_BLOCKED",
+        "metadata": {
+          "method": "google.cloud.aiplatform.v1.PredictionService.GenerateContent",
+          "service": "aiplatform.googleapis.com"
+        }
+      }
+    ]
+  }
+}
+
+[2026-02-22 07:13:27.336887] Initialized with Token. Key prefix: AQ.Ab...
+[2026-02-22 07:13:27.338376] Using Vertex AI Endpoint: insightdb-488114
+[2026-02-22 07:13:27.339055] Calling AI core...
+[2026-02-22 07:13:29.755318] AI Error 401: {
+  "error": {
+    "code": 401,
+    "message": "Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+    "status": "UNAUTHENTICATED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "API_KEY_SERVICE_BLOCKED",
+        "metadata": {
+          "method": "google.cloud.aiplatform.v1.PredictionService.GenerateContent",
+          "service": "aiplatform.googleapis.com"
+        }
+      }
+    ]
+  }
+}
+
+[2026-02-22 07:13:39.137832] Using Vertex AI Endpoint: insightdb-488114
+[2026-02-22 07:13:39.139573] Calling AI core...
+[2026-02-22 07:13:41.466568] Using Vertex AI Endpoint: insightdb-488114
+[2026-02-22 07:13:41.468329] Calling AI core...
+[2026-02-22 07:13:41.478151] AI Error 401: {
+  "error": {
+    "code": 401,
+    "message": "Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+    "status": "UNAUTHENTICATED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "API_KEY_SERVICE_BLOCKED",
+        "metadata": {
+          "service": "aiplatform.googleapis.com",
+          "method": "google.cloud.aiplatform.v1.PredictionService.GenerateContent"
+        }
+      }
+    ]
+  }
+}
+
+[2026-02-22 07:13:43.925064] AI Error 401: {
+  "error": {
+    "code": 401,
+    "message": "Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+    "status": "UNAUTHENTICATED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "API_KEY_SERVICE_BLOCKED",
+        "metadata": {
+          "method": "google.cloud.aiplatform.v1.PredictionService.GenerateContent",
+          "service": "aiplatform.googleapis.com"
+        }
+      }
+    ]
+  }
+}
+
+[2026-02-22 07:21:59.658496] Calling AI core (Studio)...
+[2026-02-22 07:22:00.918212] AI Error 401: {
+  "error": {
+    "code": 401,
+    "message": "API keys are not supported by this API. Expected OAuth2 access token or other authentication credentials that assert a principal. See https://cloud.google.com/docs/authentication",
+    "status": "UNAUTHENTICATED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "CREDENTIALS_MISSING",
+        "domain": "googleapis.com",
+        "metadata": {
+          "service": "generativelanguage.googleapis.com",
+          "method": "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent"
+        }
+      }
+    ]
+  }
+}
+
+[2026-02-22 07:22:04.587156] Calling AI core (Studio)...
+[2026-02-22 07:22:05.427957] AI Error 401: {
+  "error": {
+    "code": 401,
+    "message": "API keys are not supported by this API. Expected OAuth2 access token or other authentication credentials that assert a principal. See https://cloud.google.com/docs/authentication",
+    "status": "UNAUTHENTICATED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "CREDENTIALS_MISSING",
+        "domain": "googleapis.com",
+        "metadata": {
+          "method": "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent",
+          "service": "generativelanguage.googleapis.com"
+        }
+      }
+    ]
+  }
+}
+
+[2026-02-22 07:22:17.638235] Calling AI core (Studio)...
+[2026-02-22 07:22:18.745706] AI Error 401: {
+  "error": {
+    "code": 401,
+    "message": "API keys are not supported by this API. Expected OAuth2 access token or other authentication credentials that assert a principal. See https://cloud.google.com/docs/authentication",
+    "status": "UNAUTHENTICATED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "CREDENTIALS_MISSING",
+        "domain": "googleapis.com",
+        "metadata": {
+          "method": "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent",
+          "service": "generativelanguage.googleapis.com"
+        }
+      }
+    ]
+  }
+}
+
+[2026-02-22 07:26:33.149123] Found Service Account key at: C:\Users\acer\Desktop\hackfest-2.0\insightdb-488114-05559aae354e.json
+[2026-02-22 07:26:33.328796] Service Account Loaded. Project: insightdb-488114
+[2026-02-22 07:26:34.316097] Calling AI core (Vertex)...
+[2026-02-22 07:26:36.884913] AI Error 400: {
+  "error": {
+    "code": 400,
+    "message": "Please use a valid role: user, model.",
+    "status": "INVALID_ARGUMENT"
+  }
+}
+
+[2026-02-22 07:26:36.886191] Vertex error. Trying AI Studio fallback...
+[2026-02-22 07:26:36.887789] Calling AI core (Studio)...
+[2026-02-22 07:26:38.120925] AI Error 401: {
+  "error": {
+    "code": 401,
+    "message": "API keys are not supported by this API. Expected OAuth2 access token or other authentication credentials that assert a principal. See https://cloud.google.com/docs/authentication",
+    "status": "UNAUTHENTICATED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "CREDENTIALS_MISSING",
+        "domain": "googleapis.com",
+        "metadata": {
+          "service": "generativelanguage.googleapis.com",
+          "method": "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent"
+        }
+      }
+    ]
+  }
+}
+
+[2026-02-22 07:26:41.191557] Calling AI core (Studio)...
+[2026-02-22 07:26:42.325054] AI Error 401: {
+  "error": {
+    "code": 401,
+    "message": "API keys are not supported by this API. Expected OAuth2 access token or other authentication credentials that assert a principal. See https://cloud.google.com/docs/authentication",
+    "status": "UNAUTHENTICATED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "CREDENTIALS_MISSING",
+        "domain": "googleapis.com",
+        "metadata": {
+          "service": "generativelanguage.googleapis.com",
+          "method": "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent"
+        }
+      }
+    ]
+  }
+}
+
+[2026-02-22 07:35:28.189128] Found Service Account key at: C:\Users\acer\Desktop\hackfest-2.0\insightdb-488114-05559aae354e.json
+[2026-02-22 07:35:28.394851] Service Account Loaded. Project: insightdb-488114
+[2026-02-22 07:35:28.397038] Refreshing OAuth2 token...
+[2026-02-22 07:35:29.551500] Calling AI core via Vertex AI OAuth2...
+[2026-02-22 07:35:35.803825] Success
+[2026-02-22 07:35:41.063824] Calling AI core via Vertex AI OAuth2...
+[2026-02-22 07:35:56.513532] Success
+[2026-02-22 07:42:57.513766] Calling AI core via Vertex AI OAuth2...
+[2026-02-22 07:43:02.532299] Success
+[2026-02-22 07:44:24.000248] Found Service Account key at: C:\Users\acer\Desktop\hackfest-2.0\insightdb-488114-05559aae354e.json
+[2026-02-22 07:44:24.223832] Service Account Loaded. Project: insightdb-488114
+[2026-02-22 07:44:24.225676] Refreshing OAuth2 token...
+[2026-02-22 07:44:25.590357] Calling AI core via Vertex AI OAuth2...
+[2026-02-22 07:44:33.503140] Success
+[2026-02-22 07:44:47.292866] Calling AI core via Vertex AI OAuth2...
+[2026-02-22 07:45:06.453566] Success
+[2026-02-22 07:58:36.576990] Found Service Account key at: C:\Users\acer\Desktop\hackfest-2.0\insightdb-488114-05559aae354e.json
+[2026-02-22 07:58:36.774160] Service Account Loaded. Project: insightdb-488114
+[2026-02-22 07:58:36.776003] Refreshing OAuth2 token...
+[2026-02-22 07:58:37.944569] Calling AI core via Vertex AI OAuth2...
+[2026-02-22 07:58:45.272472] Success
+[2026-02-22 07:58:56.181629] Calling AI core via Vertex AI OAuth2...
+[2026-02-22 07:59:09.307654] Success
+[2026-02-22 08:06:53.262174] Found Service Account key at: C:\Users\acer\Desktop\hackfest-2.0\insightdb-488114-05559aae354e.json
+[2026-02-22 08:06:53.474993] Service Account Loaded. Project: insightdb-488114
+[2026-02-22 08:06:53.477478] Refreshing OAuth2 token...
+[2026-02-22 08:06:54.863011] Calling AI core via Vertex AI OAuth2...
+[2026-02-22 08:07:04.558896] Success
+[2026-02-22 08:24:09.281931] Calling AI core via Vertex AI OAuth2...
+[2026-02-22 08:24:24.437978] Success
+[2026-02-22 08:53:20.514364] Found Service Account key at: C:\Users\acer\Desktop\hackfest-2.0\insightdb-488114-05559aae354e.json
+[2026-02-22 08:53:20.716918] Service Account Loaded. Project: insightdb-488114
+[2026-02-22 08:53:20.718817] Refreshing OAuth2 token...
+[2026-02-22 08:53:21.934270] Calling AI core via Vertex AI OAuth2...
+[2026-02-22 08:53:28.797465] Success
+[2026-02-22 08:53:40.900113] Calling AI core via Vertex AI OAuth2...
+[2026-02-22 08:53:55.227994] Success
+[2026-02-22 08:54:56.102632] Found Service Account key at: C:\Users\acer\Desktop\hackfest-2.0\insightdb-488114-05559aae354e.json
+[2026-02-22 08:54:56.292481] Service Account Loaded. Project: insightdb-488114
+[2026-02-22 08:54:56.295514] Refreshing OAuth2 token...
+[2026-02-22 08:54:57.424264] Calling AI core via Vertex AI OAuth2...
+[2026-02-22 08:55:04.105935] Success
+[2026-02-22 09:11:15.103329] Calling AI core via Vertex AI OAuth2...
+[2026-02-22 09:11:18.546498] Success
+[2026-02-22 09:11:31.669400] Calling AI core via Vertex AI OAuth2...
+[2026-02-22 09:11:37.490927] Success
+[2026-02-22 09:22:36.722441] Found Service Account key at: C:\Users\acer\Desktop\hackfest-2.0\insightdb-488114-05559aae354e.json
+[2026-02-22 09:22:36.935960] Service Account Loaded. Project: insightdb-488114
+[2026-02-22 09:22:36.938037] Refreshing OAuth2 token...
+[2026-02-22 09:22:38.123194] Calling AI core via Vertex AI OAuth2...
+[2026-02-22 09:22:59.976014] Success
+[2026-02-22 09:22:59.980724] Validation Policy Parse Error: Unterminated string starting at: line 12 column 16 (char 325)
+[2026-02-22 09:23:00.962780] Calling AI core via Vertex AI OAuth2...
+[2026-02-22 09:23:08.726726] Success
+[2026-02-22 09:23:41.789938] Calling AI core via Vertex AI OAuth2...
+[2026-02-22 09:24:01.618167] Success
+[2026-02-22 09:27:35.906631] Found Service Account key at: C:\Users\acer\Desktop\hackfest-2.0\insightdb-488114-05559aae354e.json
+[2026-02-22 09:27:36.117656] Service Account Loaded. Project: insightdb-488114
+[2026-02-22 09:27:36.120278] Refreshing OAuth2 token...
+[2026-02-22 09:27:37.270967] Calling AI core via Vertex AI OAuth2...
+[2026-02-22 09:27:49.863745] Success
+[2026-02-22 09:27:50.849223] Calling AI core via Vertex AI OAuth2...
+[2026-02-22 09:27:59.488785] Success
+[2026-02-22 09:28:05.976188] Calling AI core via Vertex AI OAuth2...
+[2026-02-22 09:28:22.733777] Success
+[2026-02-22 09:28:41.047224] Calling AI core via Vertex AI OAuth2...
+[2026-02-22 09:29:00.418266] Success
+[2026-02-22 09:29:01.466399] Calling AI core via Vertex AI OAuth2...
+[2026-02-22 09:29:08.554818] Success
+[2026-02-22 09:29:12.989133] Calling AI core via Vertex AI OAuth2...
+[2026-02-22 09:29:35.539746] Success
+[2026-02-22 09:30:09.950422] Calling AI core via Vertex AI OAuth2...
+[2026-02-22 09:30:15.064461] Success
+[2026-02-22 09:38:01.841142] Found Service Account key at: C:\Users\acer\Desktop\hackfest-2.0\insightdb-488114-05559aae354e.json
+[2026-02-22 09:38:02.131107] Service Account Loaded. Project: insightdb-488114
+[2026-02-22 09:38:02.140912] Refreshing OAuth2 token...
+[2026-02-22 09:38:03.816965] Calling AI core via Vertex AI OAuth2...
+[2026-02-22 09:38:10.332794] Success
+[2026-02-22 09:38:10.446793] Calling AI core via Vertex AI OAuth2...
+[2026-02-22 09:38:17.873083] Success
