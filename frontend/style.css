@@ -66,12 +66,12 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    background-color: var(--bg-body);
+    background-color: #ffffff;
     color: var(--text-main);
     display: flex;
     flex-direction: column;
     height: 100vh;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 /* Header */
@@ -127,6 +127,7 @@ header {
     border-radius: 20px;
     padding: 48px;
     width: 100%;
+    min-width: 550px;
     max-width: 550px;
     box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
     text-align: center;
